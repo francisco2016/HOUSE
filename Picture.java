@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square tierra;
    
 
     /**
@@ -55,6 +56,13 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        
+        tierra = new Square();
+        tierra.changeColor("green");
+        tierra.moveHorizontal(-320);
+        tierra.moveVertical(140);
+        tierra.changeSize(2000);
+        tierra.makeVisible();
 
 	
     }
