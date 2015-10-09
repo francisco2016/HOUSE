@@ -49,14 +49,7 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
-
-        sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(80);
-        sun.makeVisible();
-        sun.slowMoveVertical(180);
+        
         
         tierra = new Square();
         tierra.changeColor("green");
@@ -64,6 +57,18 @@ public class Picture
         tierra.moveVertical(140);
         tierra.changeSize(2000);
         tierra.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-90);
+        sun.changeSize(80);
+        sun.makeVisible();
+        
+        
+        
+        
+        
 
 	
     }
