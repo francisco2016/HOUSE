@@ -70,7 +70,7 @@ public class Picture
         
         
 
-	
+    
     }
 
     /**
@@ -101,9 +101,18 @@ public class Picture
         }
     }
     
+    /**
+     * Método para hacer que el sol se mueva hasta tocar el horizonte.
+     */
     public void moveSum(){
-	     if (wall != null){
-        sun.slowMoveVertical(180);	}
+         if (wall != null){
+        sun.slowMoveVertical(180);        
+         wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+            sun.changeColor("yellow");
+            tierra.changeColor("black");
+    }
 }
     
 }
