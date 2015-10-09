@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square tierra;
+    private Person peregrino;
    
 
     /**
@@ -65,8 +66,9 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
-        
-        
+        peregrino = new Person();
+        peregrino.moveVertical(40);
+        peregrino.moveHorizontal(-90);
         
         
 
@@ -107,12 +109,15 @@ public class Picture
     public void moveSum(){
          if (wall != null){
         sun.slowMoveVertical(180);        
-         wall.changeColor("black");
-            window.changeColor("white");
-            roof.changeColor("black");
-            sun.changeColor("yellow");
-            tierra.changeColor("black");
+        wall.changeColor("black");
+        window.changeColor("white");
+        roof.changeColor("black");
+        sun.changeColor("yellow");
+        tierra.changeColor("black");
     }
 }
     
+    public void aparecePersona(){
+        peregrino.makeVisible();
+    }
 }
