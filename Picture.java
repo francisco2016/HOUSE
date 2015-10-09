@@ -100,4 +100,10 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    public void moveSum(){
+	     if (wall != null){
+        sun.slowMoveVertical(180);	}
+}
+    
 }
