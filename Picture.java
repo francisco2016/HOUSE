@@ -67,8 +67,9 @@ public class Picture
         sun.makeVisible();
         
         peregrino = new Person();
+        peregrino.makeVisible();
         peregrino.moveVertical(40);
-        peregrino.moveHorizontal(-90);
+        peregrino.moveHorizontal(-300);
         
         
 
@@ -118,6 +119,6 @@ public class Picture
 }
     
     public void aparecePersona(){
-        peregrino.makeVisible();
+        peregrino.slowMoveHorizontal(185);
     }
 }
