@@ -17,6 +17,9 @@ public class Picture
     private Circle sun;
     private Square tierra;
     private Person peregrino;
+    private Triangle cometa1;
+    private Triangle cometa2;
+    private Triangle cometa3;
    
 
     /**
@@ -71,7 +74,24 @@ public class Picture
         peregrino.moveVertical(40);
         peregrino.moveHorizontal(-300);
         
+        cometa3 = new Triangle();
+        cometa3.moveHorizontal(200);
+        cometa3.changeSize(80,70);
+        cometa3.changeColor("yellow");
+        cometa3.moveVertical(40);
         
+        cometa2 = new Triangle();
+        cometa2.moveHorizontal(200);
+        cometa2.changeSize(70,60);
+        cometa2.changeColor("blue");
+        cometa2.moveVertical(20);
+        
+        cometa1 = new Triangle();
+        cometa1.moveHorizontal(200);
+        cometa1.changeSize(60,50);
+        cometa1.changeColor("magenta");
+        
+       
 
     
     }
@@ -116,9 +136,20 @@ public class Picture
         sun.changeColor("yellow");
         tierra.changeColor("black");
     }
-}
-    
+    }
+
+    /**
+     * Aparece una persona por la izquierda, desplazandose hasta llegar a la casa.
+     */
     public void aparecePersona(){
         peregrino.slowMoveHorizontal(185);
     }
+    
+    public void apareceCometa(){
+        if (wall != null){
+           cometa3.makeVisible();
+           cometa2.makeVisible();
+           cometa1.makeVisible();
+    }
+   }
 }
