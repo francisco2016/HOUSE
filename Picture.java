@@ -145,11 +145,27 @@ public class Picture
         peregrino.slowMoveHorizontal(185);
     }
     
+    /**
+     * Este método crea un cometa de tres colores.
+     */ 
     public void apareceCometa(){
         if (wall != null){
            cometa3.makeVisible();
            cometa2.makeVisible();
            cometa1.makeVisible();
     }
+   }
+   
+   /**
+     * Este método hace que el cometa de tres colores se desplace hacia arriba hasta desaparecer
+     */ 
+    public void desplazaCometa(){
+        if (wall != null){
+           cometa3.makeVisible();
+           cometa2.makeVisible();
+           cometa1.makeVisible();
+           cometa3.slowMoveVertical(-300);
+           cometa2.slowMoveVertical(-300);
+           cometa1.slowMoveVertical(-300);}
    }
 }
